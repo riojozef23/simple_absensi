@@ -32,9 +32,8 @@ services:
     volumes:
       - ./absensi:/var/www/html/absensi
     working_dir: /var/www/html/absensi
-    command: ["composer", "create-project", "laravel/laravel", "."]
-   # command: ["composer", "install"]
-    #command: ["sh", "-c", "composer install && tail -f /dev/null"]
+    #command: ["composer", "create-project", "laravel/laravel", "."]
+    command: ["sh", "-c", "composer install && tail -f /dev/null"]
 
     networks:
       - laravel
